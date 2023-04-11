@@ -13,7 +13,7 @@ export default function New() {
           <div className="row techChair">
             {/* Technician */}
             <div className="col-xl-8 d-flex">
-              <div className="card shadow flex-fill">
+              <div className="card shadow mb-2 flex-fill">
                 <div className="card-header">
                   <i className="fas fa-user me-1"></i>
                   Technician
@@ -90,7 +90,6 @@ export default function New() {
             <div className="col-xl-4"></div>
           </div>
         </div>
-        <Footer />
       </main>
     </>
   );
