@@ -13,7 +13,6 @@ root.render(
     <Router>
       <Nav />
       <App />
-      <Footer/>
     </Router>
   </React.StrictMode>
 );
