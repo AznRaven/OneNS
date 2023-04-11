@@ -2,23 +2,7 @@ import New from "../pages/ChairRecords/New";
 import Footer from "./Footer";
 
 export default function Nav() {
-  const sb = () => {
-    const sidebarToggle = document.body.querySelector("#sidebarToggle");
-    if (sidebarToggle) {
-      // Uncomment Below to persist sidebar toggle between refreshes
-      // if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
-      //     document.body.classList.toggle('sb-sidenav-toggled');
-      // }
-      sidebarToggle.addEventListener("click", (event) => {
-        event.preventDefault();
-        document.body.classList.toggle("sb-sidenav-toggled");
-        localStorage.setItem(
-          "sb|sidebar-toggle",
-          document.body.classList.contains("sb-sidenav-toggled")
-        );
-      });
-    }
-  };
+  // const sidebarToggle = document.body.querySelector('#sidebarToggle');
 
   return (
     <>
@@ -32,7 +16,10 @@ export default function Nav() {
           class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
           id="sidebarToggle"
           href="#!"
-          onClick={sb}
+          onClick={()=>{
+            document.body.classList.toggle('sb-sidenav-toggled');
+
+          }}
         >
           <i class="fas fa-bars"></i>
         </button>
@@ -249,11 +236,9 @@ export default function Nav() {
           </nav>
         </div>
         <div id="layoutSidenav_content">
-          <New/>
-          
+          <New />
         </div>
       </div>
-        
     </>
   );
 }
