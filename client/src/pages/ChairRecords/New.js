@@ -18,7 +18,7 @@ export default function New() {
                   <i className="fas fa-user me-1"></i>
                   Technician
                 </div>
-                <div className="card-body" style={{ height: "57vh" }}></div>
+                <div className="card-body techBody "></div>
               </div>
             </div>
             {/* Chair */}
@@ -28,16 +28,59 @@ export default function New() {
                   <i className="fas fa-calculator me-1"></i>
                   Chair
                 </div>
-                <div className="card-body"
-                style={{ height: "30vh" }}></div>
+                <div className="card-body">
+                  <div class="row">
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      7
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      8
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      9
+                    </button>
+                  </div>
+                  <div class="row">
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      4
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      5
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      6
+                    </button>
+                  </div>
+                  <div class="row">
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      1
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      2
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      3
+                    </button>
+                  </div>
+                  <div class="row">
+                    <button type="button" class="btn btn-outline-primary chairBtn col">
+                      Clear
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary chairBtn col">
+                      0
+                    </button>
+                    <button type="button" class="btn btn-outline-danger chairBtn col">
+                      Submit
+                    </button>
+                  </div>
+                </div>
               </div>
               <div className="card mb-4 shadow">
                 <div className="card-header">
                   <i className="fas fa-chart-bar me-1"></i>
                   Details
                 </div>
-                <div className="card-body"
-                style={{ height: "20vh" }}></div>
+                <div className="card-body" style={{ height: "20vh" }}></div>
               </div>
             </div>
             {/* Details */}

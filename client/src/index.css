@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.techBody{
+
+  height: fit-content;
+  gap: 5px;
+}
+
+.chairBtn {
+  margin: 10px;
+  height: 6vh;
+}
