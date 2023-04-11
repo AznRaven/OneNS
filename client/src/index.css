@@ -25,3 +25,7 @@ code {
 .detailCard {
   justify-content: flex-end;
 }
+
+.techChair {
+  height: 90vh;
+}

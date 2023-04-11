@@ -10,15 +10,15 @@ export default function New() {
             <li className="breadcrumb-item active">Add New Record</li>
           </ol>
           <br />
-          <div className="row">
+          <div className="row techChair">
             {/* Technician */}
-            <div className="col-xl-8">
-              <div className="card shadow">
+            <div className="col-xl-8 d-flex">
+              <div className="card shadow flex-fill">
                 <div className="card-header">
                   <i className="fas fa-user me-1"></i>
                   Technician
                 </div>
-                <div className="card-body techBody" style={{ height: "60vh" }}></div>
+                <div className="card-body techBody flex-fill"></div>
               </div>
             </div>
             {/* Chair */}
