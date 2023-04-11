@@ -13,16 +13,16 @@ export default function New() {
           <div className="row">
             {/* Technician */}
             <div className="col-xl-8">
-              <div className="card mb-4 shadow">
+              <div className="card shadow">
                 <div className="card-header">
                   <i className="fas fa-user me-1"></i>
                   Technician
                 </div>
-                <div className="card-body techBody "></div>
+                <div className="card-body techBody" style={{ height: "60vh" }}></div>
               </div>
             </div>
             {/* Chair */}
-            <div className="col-xl-4">
+            <div className="col-xl-4 d-flex flex-column">
               <div className="card mb-2 shadow">
                 <div className="card-header">
                   <i className="fas fa-calculator me-1"></i>
@@ -75,13 +75,16 @@ export default function New() {
                   </div>
                 </div>
               </div>
-              <div className="card mb-4 shadow">
+
+
+              <div className="card shadow flex-fill">
                 <div className="card-header">
                   <i className="fas fa-chart-bar me-1"></i>
                   Details
                 </div>
-                <div className="card-body" style={{ height: "20vh" }}></div>
+                <div className="card-body"></div>
               </div>
+              
             </div>
             {/* Details */}
             <div className="col-xl-4"></div>
