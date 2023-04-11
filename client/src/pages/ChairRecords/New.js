@@ -9,7 +9,6 @@ export default function New() {
           <ol className="breadcrumb mb-4">
             <li className="breadcrumb-item active">Add New Record</li>
           </ol>
-          <br />
           <div className="row techChair">
             {/* Technician */}
             <div className="col-xl-8 d-flex techCard">
@@ -18,7 +17,17 @@ export default function New() {
                   <i className="fas fa-user me-1"></i>
                   Technician
                 </div>
-                <div className="card-body techBody flex-fill"></div>
+                <div className="card-body techBody flex-fill">
+                  <div className="form-floating mb-3">
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="techFloatingInput"
+                      placeholder="tech"
+                    />
+                    <label for="techFloatingInput">Select Technician</label>
+                  </div>
+                </div>
               </div>
             </div>
             {/* Chair */}
@@ -29,98 +38,210 @@ export default function New() {
                   Chair
                 </div>
                 <div className="card-body">
-                  <div class="row">
+                  <div className="form-floating mb-3">
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="chairFloatingInput"
+                      placeholder="chair"
+                    />
+                    <label for="chairFloatingInput">Enter Chair Number</label>
+                  </div>
+                  {/* Chair Number Pad */}
+                  <div className="row">
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       7
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       8
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       9
                     </button>
                   </div>
-                  <div class="row">
+                  <div className="row">
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       4
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       5
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       6
                     </button>
                   </div>
-                  <div class="row">
+                  <div className="row">
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       1
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       2
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       3
                     </button>
                   </div>
-                  <div class="row">
+                  <div className="row">
                     <button
                       type="button"
-                      class="btn btn-outline-primary chairBtn col"
+                      className="btn btn-outline-primary chairBtn col"
                     >
                       Clear
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-secondary chairBtn col"
+                      className="btn btn-outline-secondary chairBtn col"
                     >
                       0
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-danger chairBtn col"
+                      className="btn btn-outline-danger chairBtn col"
                     >
                       Submit
                     </button>
                   </div>
+                  <div className="row">
+                    <button
+                      type="button"
+                      className="btn btn-outline-primary chairBtn col"
+                    >
+                      End Of Day
+                    </button>
+
+                    <button
+                      type="button"
+                      className="btn btn-outline-danger chairBtn col"
+                    >
+                      Bi-Weekly
+                    </button>
+                  </div>
                 </div>
               </div>
-
+              {/* Details */}
               <div className="card shadow flex-fill">
                 <div className="card-header">
                   <i className="fas fa-chart-bar me-1"></i>
                   Details
                 </div>
-                <div className="card-body"></div>
+                <div className="card-body">
+                  <div className="row d-flex ">
+                  <div className="form-floating mb-3 col-12 text-center">
+                  <input className="rounded form-control fs-6" type="datetime-local"/>
+                    
+                  </div>
+                  {/* <div className="form-floating mb-3 col-6">
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="chairFloatingInput"
+                      placeholder="chair"
+                    />
+                    <label for="chairFloatingInput" className="text-center">Time</label>
+                  </div> */}
+                  </div>
+                  <div className="row">
+                    <div className="col-6">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="liner"
+                          checked
+                        />
+                        <label className="form-check-label" for="liner">
+                          Liner Used
+                        </label>
+                        <br/>
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="client"
+                          checked
+                        />
+                        <label className="form-check-label" for="client">
+                          After Client
+                        </label>
+                        <br/>
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="cleaned"
+                          checked
+                        />
+                        <label className="form-check-label" for="cleaned">
+                          Jet Used & Cleaned
+                        </label>
+                      </div>
+                    </div>
+                    <div className="col-6">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="biWeekly"
+                        />
+                        <label className="form-check-label" for="biWeekly">
+                          BI-Weekly
+                        </label>
+                        <br/>
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="eod"
+                        />
+                        <label className="form-check-label" for="eod">
+                          End Of Day
+                        </label>
+                        <br/>
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="chairNotUsed"
+                        />
+                        <label className="form-check-label" for="chairNotUsed">
+                          Chair Not Used
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            {/* Details */}
+
             <div className="col-xl-4"></div>
           </div>
         </div>
