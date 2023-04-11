@@ -12,7 +12,7 @@ export default function New() {
           <br />
           <div className="row techChair">
             {/* Technician */}
-            <div className="col-xl-8 d-flex">
+            <div className="col-xl-8 d-flex techCard">
               <div className="card shadow flex-fill">
                 <div className="card-header">
                   <i className="fas fa-user me-1"></i>
