@@ -16,9 +16,8 @@ export default function Nav() {
           class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
           id="sidebarToggle"
           href="#!"
-          onClick={()=>{
-            document.body.classList.toggle('sb-sidenav-toggled');
-
+          onClick={() => {
+            document.body.classList.toggle("sb-sidenav-toggled");
           }}
         >
           <i class="fas fa-bars"></i>
@@ -84,135 +83,74 @@ export default function Nav() {
             id="sidenavAccordion"
           >
             <div class="sb-sidenav-menu shadow">
-              <div class="nav">
-                <div class="sb-sidenav-menu-heading">Core</div>
-                <a class="nav-link" href="index.html">
-                  <div class="sb-nav-link-icon">
-                    <i class="fas fa-tachometer-alt"></i>
-                  </div>
-                  Dashboard
-                </a>
-                <div class="sb-sidenav-menu-heading">Interface</div>
-                <a
-                  class="nav-link collapsed"
-                  href="#"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseLayouts"
-                  aria-expanded="false"
-                  aria-controls="collapseLayouts"
-                >
-                  <div class="sb-nav-link-icon">
-                    <i class="fas fa-columns"></i>
-                  </div>
-                  Layouts
-                  <div class="sb-sidenav-collapse-arrow">
-                    <i class="fas fa-angle-down"></i>
-                  </div>
-                </a>
-                <div
-                  class="collapse"
-                  id="collapseLayouts"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#sidenavAccordion"
-                >
-                  <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="layout-static.html">
-                      Static Navigation
-                    </a>
-                    <a class="nav-link" href="layout-sidenav-light.html">
-                      Light Sidenav
-                    </a>
-                  </nav>
-                </div>
-                <a
-                  class="nav-link collapsed"
-                  href="#"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapsePages"
-                  aria-expanded="false"
-                  aria-controls="collapsePages"
-                >
-                  <div class="sb-nav-link-icon">
-                    <i class="fas fa-book-open"></i>
-                  </div>
-                  Pages
-                  <div class="sb-sidenav-collapse-arrow">
-                    <i class="fas fa-angle-down"></i>
-                  </div>
-                </a>
-                <div
-                  class="collapse"
-                  id="collapsePages"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#sidenavAccordion"
-                >
-                  <nav
-                    class="sb-sidenav-menu-nested nav accordion"
-                    id="sidenavAccordionPages"
+              <div class="nav d-flex align-items-center">
+                {/* Chair Link */}
+                <div class="sb-sidenav-menu-heading">Records</div>
+                <div class="dropdown-center">
+                  <a
+                    class="btn btn-light dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    <a
-                      class="nav-link collapsed"
-                      href="#"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#pagesCollapseAuth"
-                      aria-expanded="false"
-                      aria-controls="pagesCollapseAuth"
-                    >
-                      Authentication
-                      <div class="sb-sidenav-collapse-arrow">
-                        <i class="fas fa-angle-down"></i>
-                      </div>
-                    </a>
-                    <div
-                      class="collapse"
-                      id="pagesCollapseAuth"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#sidenavAccordionPages"
-                    >
-                      <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="login.html">
-                          Login
-                        </a>
-                        <a class="nav-link" href="register.html">
-                          Register
-                        </a>
-                        <a class="nav-link" href="password.html">
-                          Forgot Password
-                        </a>
-                      </nav>
+                    <div class="sb-nav-link-icon opacity-50">
+                      <i class="fa-solid fa-chair"></i>
                     </div>
-                    <a
-                      class="nav-link collapsed"
-                      href="#"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#pagesCollapseError"
-                      aria-expanded="false"
-                      aria-controls="pagesCollapseError"
-                    >
-                      Error
-                      <div class="sb-sidenav-collapse-arrow">
-                        <i class="fas fa-angle-down"></i>
-                      </div>
-                    </a>
-                    <div
-                      class="collapse"
-                      id="pagesCollapseError"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#sidenavAccordionPages"
-                    >
-                      <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="401.html">
-                          401 Page
-                        </a>
-                        <a class="nav-link" href="404.html">
-                          404 Page
-                        </a>
-                        <a class="nav-link" href="500.html">
-                          500 Page
-                        </a>
-                      </nav>
+                    Chair Records
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Add Record
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Show Record
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Print
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                {/* Employee Link */}
+
+                <div class="dropdown-center">
+                  <a
+                    class="btn btn-light dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="sb-nav-link-icon opacity-50">
+                      <i class="fa-regular fa-user"></i>
                     </div>
-                  </nav>
+                    Employees
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Add Employee
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Show Employee
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Contractor List
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="sb-sidenav-menu-heading">Addons</div>
                 <a class="nav-link" href="charts.html">
@@ -241,5 +179,4 @@ export default function Nav() {
       </div>
     </>
   );
-  
 }
