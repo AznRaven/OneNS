@@ -1,9 +1,10 @@
 import Footer from "../../components/Footer";
+import Login from "../Login";
 
-export default function New() {
+export default function New(user) {
   return (
     <>
-      <main>
+    {user ? (<main>
         <div className="container-fluid px-4">
           <h1 className="mt-4">Select Technician and Chair</h1>
           <ol className="breadcrumb mb-4">
@@ -245,7 +246,8 @@ export default function New() {
             <div className="col-xl-4"></div>
           </div>
         </div>
-      </main>
+      </main>) : (<Login/>)}
+      
     </>
   );
 }

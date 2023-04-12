@@ -3,6 +3,7 @@ import "../src/css/styles.css"
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom"; 
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 export default function App() {
 
@@ -19,6 +20,10 @@ export default function App() {
         <Route 
           path="/newRecords"
           element={<Home/>}
+        />
+        <Route 
+          path="/login"
+          element={<Login/>}
         />
         {/* <Route
           path="/EmployeePage/:emp"

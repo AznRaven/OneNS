@@ -1,7 +1,10 @@
+import { useState } from "react";
 import New from "../pages/ChairRecords/New";
+import Login from "../pages/Login";
 import Footer from "./Footer";
 
 export default function Nav() {
+  let [user, setUser] = useState(false)
   // const sidebarToggle = document.body.querySelector('#sidebarToggle');
 
   return (
@@ -67,16 +70,24 @@ export default function Nav() {
               <li>
                 <hr class="dropdown-divider" />
               </li>
-              <li>
-                <a class="dropdown-item" href="#!">
-                  Logout
-                </a>
-              </li>
+              {user ? (
+                <li>
+                  <a className="dropdown-item" href="#!">
+                    Logout
+                  </a>
+                </li>
+              ) : (
+                <li>
+                  <a className="dropdown-item" href="/login">
+                    Login
+                  </a>
+                </li>
+              )}
             </ul>
           </li>
         </ul>
       </nav>
-      <div id="layoutSidenav">
+      {user ? (<div id="layoutSidenav">
         <div id="layoutSidenav_nav">
           <nav
             class="sb-sidenav accordion sb-sidenav-light"
@@ -176,7 +187,8 @@ export default function Nav() {
         <div id="layoutSidenav_content">
           <New />
         </div>
-      </div>
+      </div>) : <Login/>}
+      
     </>
   );
 }
