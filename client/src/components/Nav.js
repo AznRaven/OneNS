@@ -42,7 +42,7 @@ export default function Nav() {
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggled"
               id="navbarDropdown"
               href="#"
               role="button"
@@ -241,4 +241,5 @@ export default function Nav() {
       </div>
     </>
   );
+  
 }
