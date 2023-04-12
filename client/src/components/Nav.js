@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import New from "../pages/ChairRecords/New";
 import Login from "../pages/Login";
 import Footer from "./Footer";
+import Sidenav from "./Sidenav";
 
 export default function Nav() {
   let [user, setUser] = useState(false)
@@ -78,116 +80,19 @@ export default function Nav() {
                 </li>
               ) : (
                 <li>
-                  <a className="dropdown-item" href="/login">
+                  <Link className="text-dark" to={"/login"} style={{textDecoration: "none"}}>
+                    <div className="mx-3">Login</div>
+                  </Link>
+                  {/* <a className="dropdown-item" href="/login">
                     Login
-                  </a>
+                  </a> */}
                 </li>
               )}
             </ul>
           </li>
         </ul>
       </nav>
-      {user ? (<div id="layoutSidenav">
-        <div id="layoutSidenav_nav">
-          <nav
-            class="sb-sidenav accordion sb-sidenav-light"
-            id="sidenavAccordion"
-          >
-            <div class="sb-sidenav-menu shadow">
-              <div class="nav d-flex align-items-center">
-                {/* Chair Link */}
-                <div class="sb-sidenav-menu-heading">Records</div>
-                <div class="dropdown-center">
-                  <a
-                    class="btn btn-light dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <div class="sb-nav-link-icon opacity-50">
-                      <i class="fa-solid fa-chair"></i>
-                    </div>
-                    Chair Records
-                  </a>
-
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Add Record
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Show Record
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Print
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* Employee Link */}
-
-                <div class="dropdown-center">
-                  <a
-                    class="btn btn-light dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <div class="sb-nav-link-icon opacity-50">
-                      <i class="fa-regular fa-user"></i>
-                    </div>
-                    Employees
-                  </a>
-
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Add Employee
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Show Employee
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Contractor List
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="sb-sidenav-menu-heading">Addons</div>
-                <a class="nav-link" href="charts.html">
-                  <div class="sb-nav-link-icon">
-                    <i class="fas fa-chart-area"></i>
-                  </div>
-                  Charts
-                </a>
-                <a class="nav-link" href="tables.html">
-                  <div class="sb-nav-link-icon">
-                    <i class="fas fa-table"></i>
-                  </div>
-                  Tables
-                </a>
-              </div>
-            </div>
-            {/* <div class="sb-sidenav-footer">
-              <div class="small">Logged in as:</div>
-              Start Bootstrap
-            </div> */}
-          </nav>
-        </div>
-        <div id="layoutSidenav_content">
-          <New />
-        </div>
-      </div>) : <Login/>}
+      {/* {user ? <Sidenav/> : <Login/>} */}
       
     </>
   );

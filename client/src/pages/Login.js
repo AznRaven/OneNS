@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Login() {
   return (
     <>
@@ -51,7 +53,10 @@ export default function Login() {
               </div>
               <div class="card-footer text-center py-3">
                 <div class="small">
-                  <a href="register.html">Need an account? Sign up!</a>
+                <Link to={"/register"}>
+                    <div>Need an account? Sign up!</div>
+                  </Link>
+                  {/* <a href="/register">Need an account? Sign up!</a> */}
                 </div>
               </div>
             </div>
