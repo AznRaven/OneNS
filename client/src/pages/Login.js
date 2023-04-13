@@ -4,7 +4,7 @@ export default function Login() {
   return (
     <>
       <div class="container loginPage">
-        <div class="row justify-content-center" style={{marginTop: "10vh"}}>
+        <div class="row justify-content-center" style={{ marginTop: "10vh" }}>
           <div class="col-lg-5">
             <div class="card shadow-lg border-0 rounded-lg mt-5">
               <div class="card-header">
@@ -53,7 +53,7 @@ export default function Login() {
               </div>
               <div class="card-footer text-center py-3">
                 <div class="small">
-                <Link to={"/register"}>
+                  <Link to={"/register"}>
                     <div>Need an account? Sign up!</div>
                   </Link>
                   {/* <a href="/register">Need an account? Sign up!</a> */}

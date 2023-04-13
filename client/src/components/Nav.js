@@ -6,16 +6,19 @@ import Footer from "./Footer";
 import Sidenav from "./Sidenav";
 
 export default function Nav() {
-  let [user, setUser] = useState(false)
+  let [user, setUser] = useState(false);
   // const sidebarToggle = document.body.querySelector('#sidebarToggle');
 
   return (
     <>
       <nav class="sb-topnav navbar navbar-expand navbar-light bg-light shadow">
         {/* <!-- Navbar Brand--> */}
-        <a class="navbar-brand ps-3" href="index.html">
+        <Link className="noLine text-black" to={"/"}>
+          <div>1NailSystem</div>
+        </Link>
+        {/* <a class="navbar-brand ps-3" href="index.html">
           1NailSystem
-        </a>
+        </a> */}
         {/* <!-- Sidebar Toggle--> */}
         <button
           class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
@@ -80,7 +83,11 @@ export default function Nav() {
                 </li>
               ) : (
                 <li>
-                  <Link className="text-dark" to={"/login"} style={{textDecoration: "none"}}>
+                  <Link
+                    className="text-dark"
+                    to={"/login"}
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="mx-3">Login</div>
                   </Link>
                   {/* <a className="dropdown-item" href="/login">
@@ -93,7 +100,6 @@ export default function Nav() {
         </ul>
       </nav>
       {/* {user ? <Sidenav/> : <Login/>} */}
-      
     </>
   );
 }

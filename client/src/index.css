@@ -40,3 +40,7 @@ code {
 .techChairCard {
   height: 100%;
 }
+
+.noLine {
+  text-decoration: none;
+}
