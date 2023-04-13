@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Show from "./pages/ChairRecords/Show";
 
 export default function App() {
 
@@ -19,6 +20,10 @@ export default function App() {
         <Route 
           path="/newRecords"
           element={<Home/>}
+        />
+        <Route 
+          path="/showRecords"
+          element={<Show/>}
         />
         <Route 
           path="/login"

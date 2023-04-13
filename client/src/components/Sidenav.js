@@ -1,10 +1,10 @@
 import New from "../pages/ChairRecords/New";
+import { Link } from "react-router-dom";
 
 export default function Sidenav() {
-
-    return(
+  return (
     <>
-        <div id="layoutSidenav">
+      <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
           <nav
             class="sb-sidenav accordion sb-sidenav-light"
@@ -30,14 +30,20 @@ export default function Sidenav() {
 
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link className="noLine" to={"/newRecords"}>
+                        <div className="text-black mx-3">Add Record</div>
+                      </Link>
+                      {/* <a class="dropdown-item" href="#">
                         Add Record
-                      </a>
+                      </a> */}
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link className="noLine" to={"/showRecords"}>
+                        <div className="text-black mx-3">Show Record</div>
+                      </Link>
+                      {/* <a class="dropdown-item" href="#">
                         Show Record
-                      </a>
+                      </a> */}
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">
@@ -106,5 +112,5 @@ export default function Sidenav() {
         </div>
       </div>
     </>
-    )
+  );
 }
