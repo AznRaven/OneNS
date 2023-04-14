@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Show from "./pages/ChairRecords/Show";
+import NewEmp from "./pages/Employee/NewEmp";
+import ShowEmp from "./pages/Employee/ShowEmp";
+import ContractorList from "./pages/Employee/ContractorList";
 
 export default function App() {
 
@@ -24,6 +27,18 @@ export default function App() {
         <Route 
           path="/showRecords"
           element={<Show/>}
+        />
+        <Route 
+          path="/addEmployee"
+          element={<NewEmp/>}
+        />
+        <Route 
+          path="/showEmployee"
+          element={<ShowEmp/>}
+        />
+        <Route 
+          path="/contractorList"
+          element={<ContractorList/>}
         />
         <Route 
           path="/login"

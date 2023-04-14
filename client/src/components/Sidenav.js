@@ -15,18 +15,17 @@ export default function Sidenav() {
                 {/* Chair Link */}
                 <div class="sb-sidenav-menu-heading">Records</div>
                 <div class="dropdown-center">
-                  <a
-                    class="btn btn-light dropdown-toggle"
-                    href="#"
-                    role="button"
+                  <button
+                    className="btn btn-light dropdown-toggle"
+                    type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <div class="sb-nav-link-icon opacity-50">
-                      <i class="fa-solid fa-chair"></i>
+                    <div className="sb-nav-link-icon opacity-50">
+                      <i className="fa-solid fa-chair"></i>
                     </div>
                     Chair Records
-                  </a>
+                  </button>
 
                   <ul class="dropdown-menu">
                     <li>
@@ -45,11 +44,11 @@ export default function Sidenav() {
                         Show Record
                       </a> */}
                     </li>
-                    <li>
+                    {/* <li>
                       <a class="dropdown-item" href="#">
                         Print
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
                 {/* Employee Link */}
@@ -70,19 +69,25 @@ export default function Sidenav() {
 
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link className="noLine text-black mx-3" to="addEmployee">
                         Add Employee
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link
+                        className="noLine text-black mx-3"
+                        to="showEmployee"
+                      >
                         Show Employee
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link
+                        className="noLine text-black mx-3"
+                        to="contractorList"
+                      >
                         Contractor List
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
