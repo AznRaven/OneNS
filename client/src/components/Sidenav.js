@@ -54,9 +54,8 @@ export default function Sidenav() {
                 {/* Employee Link */}
 
                 <div class="dropdown-center">
-                  <a
+                  <button
                     class="btn btn-light dropdown-toggle"
-                    href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -65,7 +64,7 @@ export default function Sidenav() {
                       <i class="fa-regular fa-user"></i>
                     </div>
                     Employees
-                  </a>
+                  </button>
 
                   <ul class="dropdown-menu">
                     <li>
