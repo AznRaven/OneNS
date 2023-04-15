@@ -5,7 +5,7 @@ export default function Sidenav(props) {
   return (
     <>
       <nav
-            class="sb-sidenav accordion sb-sidenav-light"
+            class="sb-sidenav accordion sb-sidenav-light shadow"
             id="sidenavAccordion"
           >
             <div class="sb-sidenav-menu">

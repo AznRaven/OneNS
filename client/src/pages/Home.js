@@ -70,8 +70,8 @@ export default function Home(props) {
               {/* Tech */}
               <div class="row d-flex">
                 <div class="col-xl-6 d-flex flex-fill">
-                  <div class="card mb-4 flex-fill">
-                    <div class="card-header">
+                  <div class="card mb-4 flex-fill shadow">
+                    <div class="card-header shadow">
                       <i class="fas fa-chart-area me-1"></i>
                       Tech Selection
                     </div>
@@ -86,8 +86,8 @@ export default function Home(props) {
                 </div>
                 {/* Chair */}
                 <div class="col-xl-6">
-                  <div class="card mb-4">
-                    <div class="card-header">
+                  <div class="card mb-4 shadow">
+                    <div class="card-header shadow">
                       <i class="fas fa-chart-bar me-1"></i>
                       Chair Selection
                     </div>
@@ -187,8 +187,8 @@ export default function Home(props) {
                     </div>
                   </div>
                   {/* Detail */}
-                  <div class="card mb-4">
-                    <div class="card-header">
+                  <div class="card mb-4 shadow">
+                    <div class="card-header shadow">
                       <i class="fas fa-table me-1"></i>
                       Cleaned & Disinfected
                     </div>
