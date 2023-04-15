@@ -15,18 +15,17 @@ export default function Show() {
                 {/* Chair Link */}
                 <div class="sb-sidenav-menu-heading">Records</div>
                 <div class="dropdown-center">
-                  <a
-                    class="btn btn-light dropdown-toggle"
-                    href="#"
-                    role="button"
+                  <button
+                    className="btn btn-light dropdown-toggle"
+                    type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <div class="sb-nav-link-icon opacity-50">
-                      <i class="fa-solid fa-chair"></i>
+                    <div className="sb-nav-link-icon opacity-50">
+                      <i className="fa-solid fa-chair"></i>
                     </div>
                     Chair Records
-                  </a>
+                  </button>
 
                   <ul class="dropdown-menu">
                     <li>
@@ -45,19 +44,18 @@ export default function Show() {
                         Show Record
                       </a> */}
                     </li>
-                    <li>
+                    {/* <li>
                       <a class="dropdown-item" href="#">
                         Print
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
                 {/* Employee Link */}
 
                 <div class="dropdown-center">
-                  <a
+                  <button
                     class="btn btn-light dropdown-toggle"
-                    href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -66,39 +64,45 @@ export default function Show() {
                       <i class="fa-regular fa-user"></i>
                     </div>
                     Employees
-                  </a>
+                  </button>
 
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link className="noLine text-black mx-3" to="/addEmployee">
                         Add Employee
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link
+                        className="noLine text-black mx-3"
+                        to="/showEmployee"
+                      >
                         Show Employee
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link
+                        className="noLine text-black mx-3"
+                        to="/contractorList"
+                      >
                         Contractor List
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div class="sb-sidenav-menu-heading">Addons</div>
-                <a class="nav-link" href="charts.html">
+                {/* <a class="nav-link" href="charts.html">
                   <div class="sb-nav-link-icon">
                     <i class="fas fa-chart-area"></i>
                   </div>
                   Charts
-                </a>
-                <a class="nav-link" href="tables.html">
+                </a> */}
+                {/* <a class="nav-link" href="tables.html">
                   <div class="sb-nav-link-icon">
                     <i class="fas fa-table"></i>
                   </div>
                   Tables
-                </a>
+                </a> */}
               </div>
             </div>
             {/* <div class="sb-sidenav-footer">

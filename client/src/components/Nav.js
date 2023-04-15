@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import New from "../pages/ChairRecords/New";
 import Login from "../pages/Login";
 import Footer from "./Footer";
 import Sidenav from "./Sidenav";
 
 export default function Nav() {
-  let [user, setUser] = useState(false);
   // const sidebarToggle = document.body.querySelector('#sidebarToggle');
 
   return (
@@ -75,13 +73,13 @@ export default function Nav() {
               <li>
                 <hr class="dropdown-divider" />
               </li>
-              {user ? (
+              
                 <li>
                   <a className="dropdown-item" href="#!">
                     Logout
                   </a>
                 </li>
-              ) : (
+              
                 <li>
                   <Link
                     className="text-dark"
@@ -90,11 +88,9 @@ export default function Nav() {
                   >
                     <div className="mx-3">Login</div>
                   </Link>
-                  {/* <a className="dropdown-item" href="/login">
-                    Login
-                  </a> */}
+                  
                 </li>
-              )}
+              
             </ul>
           </li>
         </ul>
