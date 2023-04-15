@@ -69,7 +69,7 @@ export default function Home(props) {
               </ol> */}
               {/* Tech */}
               <div class="row d-flex">
-                <div class="col-xl-6 d-flex flex-fill">
+                <div class="col-xl-8 d-flex flex-fill">
                   <div class="card mb-4 flex-fill shadow">
                     <div class="card-header shadow">
                       <i class="fas fa-chart-area me-1"></i>
@@ -85,7 +85,7 @@ export default function Home(props) {
                   </div>
                 </div>
                 {/* Chair */}
-                <div class="col-xl-6">
+                <div class="col-xl-4">
                   <div class="card mb-4 shadow">
                     <div class="card-header shadow">
                       <i class="fas fa-chart-bar me-1"></i>
