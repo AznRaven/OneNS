@@ -151,7 +151,7 @@ export default function Home(props) {
                         <button
                           type="button"
                           onClick={handleClearClick}
-                          className="btn btn-outline-primary chairBtn col fs-4"
+                          className="btn btn-outline-primary chairBtn col fs-5"
                         >
                           Clear
                         </button>
@@ -162,7 +162,7 @@ export default function Home(props) {
                         <button
                           type="button"
                           onClick={handleSubmitClick}
-                          className="btn btn-outline-danger chairBtn col fs-4"
+                          className="btn btn-outline-danger chairBtn col fs-5"
                         >
                           Submit
                         </button>
@@ -171,7 +171,7 @@ export default function Home(props) {
                         <button
                           type="button"
                           onClick={handleEndOfDayClick}
-                          className="btn btn-outline-primary chairBtn col fs-4"
+                          className="btn btn-outline-primary chairBtn col fs-5"
                         >
                           End Of Day
                         </button>
@@ -179,7 +179,7 @@ export default function Home(props) {
                         <button
                           type="button"
                           onClick={handleBiWeeklyClick}
-                          className="btn btn-outline-danger chairBtn col fs-4"
+                          className="btn btn-outline-danger chairBtn col fs-5"
                         >
                           Bi-Weekly
                         </button>
