@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Sidenav from "../components/Sidenav";
-import New from "./ChairRecords/New";
+import New from "./ChairRecords/NewChair";
 import Login from "./Login";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
@@ -58,7 +58,7 @@ export default function Home(props) {
     <>
       <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
-          <Sidenav/>
+          <Sidenav />
         </div>
         <div id="layoutSidenav_content">
           <main>

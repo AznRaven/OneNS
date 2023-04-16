@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import New from "../pages/ChairRecords/New";
+import New from "../pages/ChairRecords/NewChair";
 import Login from "../pages/Login";
 import Footer from "./Footer";
 import Sidenav from "./Sidenav";
@@ -73,24 +73,22 @@ export default function Nav() {
               <li>
                 <hr class="dropdown-divider" />
               </li>
-              
-                <li>
-                  <a className="dropdown-item" href="#!">
-                    Logout
-                  </a>
-                </li>
-              
-                <li>
-                  <Link
-                    className="text-dark"
-                    to={"/login"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <div className="mx-3">Login</div>
-                  </Link>
-                  
-                </li>
-              
+
+              <li>
+                <a className="dropdown-item" href="#!">
+                  Logout
+                </a>
+              </li>
+
+              <li>
+                <Link
+                  className="text-dark"
+                  to={"/login"}
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="mx-3">Login</div>
+                </Link>
+              </li>
             </ul>
           </li>
         </ul>
