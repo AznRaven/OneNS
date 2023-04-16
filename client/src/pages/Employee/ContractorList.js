@@ -1,8 +1,16 @@
+import Sidenav from "../../components/Sidenav";
+import { Link } from "react-router-dom";
+
 export default function ContractorList() {
 
     return(
     <>
-    <h1>Contractor List</h1>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+        <Sidenav />
+        </div>
+        <div id="layoutSidenav_content">Contractor List</div>
+      </div>
     </>
     )
 }

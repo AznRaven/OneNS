@@ -51,19 +51,19 @@ export default function Sidenav(props) {
               </button>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">
-                    Action
-                  </a>
+                  <Link className="dropdown-item" to="/addEmployee">
+                    <div>Add Employee</div>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
-                    Action two
-                  </a>
+                  <Link className="dropdown-item" to="/showEmployee">
+                    <div>Show Employee</div>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
-                    Action three
-                  </a>
+                  <Link className="dropdown-item" to="/contractorList">
+                    <div>Contractor List</div>
+                  </Link>
                 </li>
               </ul>
             </div>
