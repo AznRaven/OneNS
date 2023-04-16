@@ -11,6 +11,7 @@ import ContractorList from "./pages/Employee/ContractorList";
 import NewChair from "./pages/ChairRecords/NewChair";
 
 export default function App() {
+  
   return (
     <div>
       {/* <HomePage employees={employees} addEmployee={addEmployee} /> */}

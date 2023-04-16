@@ -44,3 +44,12 @@ code {
 .noLine {
   text-decoration: none;
 }
+
+.showChairTable {
+  width: 90%;
+  /* height: 90%; */
+}
+
+.showChairBg {
+  height: 100%;
+}
