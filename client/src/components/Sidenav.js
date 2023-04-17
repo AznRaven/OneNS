@@ -86,18 +86,22 @@ export default function Sidenav(props) {
                 {/* <i class="fas fa-chart-area"></i> */}
                 <i class="fa-solid fa-list-ul"></i>
               </div>
-              ENGLISH
+              English
             </button>
-                <li>
-                  <Link className="dropdown-item" to="/showEmployee">
-                    <div>Show Employee</div>
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/contractorList">
-                    <div>Contractor List</div>
-                  </Link>
-                </li>
+            <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/barbering-and-cosmetology/pdf/Whirlpool-Foot-Spa-Cleaning-Record-BAC-FI-004-S.pdf", "_blank")}}>
+              <div class="sb-nav-link-icon">
+                {/* <i class="fas fa-chart-area"></i> */}
+                <i class="fa-solid fa-list-ul"></i>
+              </div>
+              Spanish
+            </button>
+            <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/barbering-and-cosmetology/pdf/Whirlpool-Foot-Spa-Cleaning-Record-BAC-FI-004-V.pdf", "_blank")}}>
+              <div class="sb-nav-link-icon">
+                {/* <i class="fas fa-chart-area"></i> */}
+                <i class="fa-solid fa-list-ul"></i>
+              </div>
+              Vietnamese
+            </button>
               </ul>
             </div>
           </div>
