@@ -104,7 +104,7 @@ export default function NewChair() {
                     <button type="button" class="btn btn-outline-primary techName">Primary</button>
                     <button type="button" class="btn btn-outline-primary techName">Primary</button>
                     <button type="button" class="btn btn-outline-primary techName">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName">test</button>
                     
                       
                       
