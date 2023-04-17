@@ -53,3 +53,12 @@ code {
 .showChairBg {
   height: 100%;
 }
+
+.techName {
+  height: 10vh;
+}
+
+.techName:hover {
+  background-color: aqua;
+  color: white;
+}

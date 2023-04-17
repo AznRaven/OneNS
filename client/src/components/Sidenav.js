@@ -67,19 +67,14 @@ export default function Sidenav(props) {
                 </li>
               </ul>
             </div>
-            <div class="sb-sidenav-menu-heading">Addons</div>
-            <a class="nav-link" href="charts.html">
+            <div class="sb-sidenav-menu-heading">Forms</div>
+            <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/cosmet/salons/forms.htm", "_blank")}}>
               <div class="sb-nav-link-icon">
-                <i class="fas fa-chart-area"></i>
+                {/* <i class="fas fa-chart-area"></i> */}
+                <i class="fa-solid fa-list-ul"></i>
               </div>
-              Charts
-            </a>
-            <a class="nav-link" href="tables.html">
-              <div class="sb-nav-link-icon">
-                <i class="fas fa-table"></i>
-              </div>
-              Tables
-            </a>
+              TDLR Forms
+            </button>
           </div>
         </div>
         <div class="sb-sidenav-footer">

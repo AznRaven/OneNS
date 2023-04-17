@@ -75,12 +75,40 @@ export default function NewChair() {
                       <i class="fas fa-chart-area me-1"></i>
                       Tech Selection
                     </div>
-                    <div class="card-body flex-fill">
-                      <canvas
-                        id="myAreaChart"
-                        width="100%"
-                        height="40"
-                      ></canvas>
+                    <div class="d-flex flex-wrap text-center justify-content-around">
+                      
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                      
+                      
                     </div>
                   </div>
                 </div>
