@@ -73,7 +73,7 @@ export default function NewChair() {
                   <div class="card mb-4 flex-fill shadow">
                     <div class="card-header shadow">
                       <i class="fas fa-chart-area me-1"></i>
-                      Tech Selection
+                      Tech Selectiona
                     </div>
                     <div class="d-flex flex-wrap text-center justify-content-around">
                       
