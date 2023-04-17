@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Sidenav from "../../components/Sidenav";
 import Login from "../Login";
 import { Link } from "react-router-dom";
@@ -7,6 +7,22 @@ import ChairNumberBtn from "../../components/ChairNumberBtn";
 import Testing from "../Testing";
 
 export default function NewChair() {
+  const buttonContainerRef = useRef(null);
+  
+  useEffect(() => {
+    // Get the longest button width
+    let maxWidth = 0;
+    const buttons = buttonContainerRef.current.querySelectorAll('.techName');
+    buttons.forEach(button => {
+      maxWidth = Math.max(maxWidth, button.offsetWidth);
+    });
+
+    // Set the minimum width of all buttons to the longest button width
+    buttons.forEach(button => {
+      button.style.minWidth = `${maxWidth}px`;
+    });
+  }, []);
+
   // let [input, setInput] = useState("");
   const [datetime, setDatetime] = useState(
     new Date()
@@ -75,20 +91,20 @@ export default function NewChair() {
                       <i class="fas fa-chart-area me-1"></i>
                       Tech Selection
                     </div>
-                    <div class="d-flex flex-wrap text-center justify-content-around">
+                    <div ref={buttonContainerRef} class="d-flex flex-wrap text-center justify-content-around">
                       
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">John</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Mike</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Test 1</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName">John</button>
+                    <button type="button" class="btn btn-outline-primary techName">Mike</button>
+                    <button type="button" class="btn btn-outline-primary techName">Test 1</button>
+                    <button type="button" class="btn btn-outline-primary techName">Jennifer</button>
+                    <button type="button" class="btn btn-outline-primary techName">Rhianna</button>
+                    <button type="button" class="btn btn-outline-primary techName">Michael</button>
+                    <button type="button" class="btn btn-outline-primary techName">Test 2</button>
+                    <button type="button" class="btn btn-outline-primary techName">Short</button>
+                    <button type="button" class="btn btn-outline-primary techName">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName">Primary</button>
                     
                       
                       

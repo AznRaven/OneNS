@@ -68,7 +68,7 @@ export default function Sidenav(props) {
               </ul>
             </div>
             <div class="sb-sidenav-menu-heading">Forms</div>
-            {/* TDLR Forms */}
+            {/* Whirlpool Forms */}
             <div class="dropdown-center">
               <button
                 class="btn dropdown-toggle bg-light text-black"
@@ -77,10 +77,10 @@ export default function Sidenav(props) {
                 aria-expanded="false"
               >
                 <i class="fa-solid fa-list-ul mx-3 opacity-50"></i>
-                TDLR Forms
+                Whirlpool Forms
               </button>
               <ul class="dropdown-menu">
-              <div class="sb-sidenav-menu-heading">WHIRLPOOL FOOT SPA INSTRUCTIONS & FORMS</div>
+              <div class="mx-3 opacity-50">WHIRLPOOL FOOT SPA INSTRUCTIONS & FORMS</div>
               <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/barbering-and-cosmetology/pdf/Whirlpool-Foot-Spa-Cleaning-Record-BAC-FI-004-E.pdf", "_blank")}}>
               <div class="sb-nav-link-icon">
                 {/* <i class="fas fa-chart-area"></i> */}
@@ -96,6 +96,42 @@ export default function Sidenav(props) {
               Spanish
             </button>
             <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/barbering-and-cosmetology/pdf/Whirlpool-Foot-Spa-Cleaning-Record-BAC-FI-004-V.pdf", "_blank")}}>
+              <div class="sb-nav-link-icon">
+                {/* <i class="fas fa-chart-area"></i> */}
+                <i class="fa-solid fa-list-ul"></i>
+              </div>
+              Vietnamese
+            </button>
+              </ul>
+            </div>
+            {/* Sanitation Requirements Forms */}
+            <div class="dropdown-center">
+              <button
+                class="btn dropdown-toggle bg-light text-black"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-list-ul mx-3 opacity-50"></i>
+                Requirements
+              </button>
+              <ul class="dropdown-menu">
+              <div class="mx-3 opacity-50">Foot Spa and Foot Basin Sanitation Requirements</div>
+              <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/barbering-and-cosmetology/pdf/Foot-Spa-Regulations-Sanitation-Requirements-BAC-FI-002-E.pdf", "_blank")}}>
+              <div class="sb-nav-link-icon">
+                {/* <i class="fas fa-chart-area"></i> */}
+                <i class="fa-solid fa-list-ul"></i>
+              </div>
+              English
+            </button>
+            <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/barbering-and-cosmetology/pdf/Foot-Spa-Regulations-Sanitation-Requirements-BAC-FI-002-S.pdf", "_blank")}}>
+              <div class="sb-nav-link-icon">
+                {/* <i class="fas fa-chart-area"></i> */}
+                <i class="fa-solid fa-list-ul"></i>
+              </div>
+              Spanish
+            </button>
+            <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/barbering-and-cosmetology/pdf/Foot-Spa-Regulations-Sanitation-Requirements-BAC-FI-002-V.pdf", "_blank")}}>
               <div class="sb-nav-link-icon">
                 {/* <i class="fas fa-chart-area"></i> */}
                 <i class="fa-solid fa-list-ul"></i>
