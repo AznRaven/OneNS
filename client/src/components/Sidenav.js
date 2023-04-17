@@ -68,13 +68,38 @@ export default function Sidenav(props) {
               </ul>
             </div>
             <div class="sb-sidenav-menu-heading">Forms</div>
-            <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/cosmet/salons/forms.htm", "_blank")}}>
+            {/* TDLR Forms */}
+            <div class="dropdown-center">
+              <button
+                class="btn dropdown-toggle bg-light text-black"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-list-ul mx-3 opacity-50"></i>
+                TDLR Forms
+              </button>
+              <ul class="dropdown-menu">
+              <div class="sb-sidenav-menu-heading">WHIRLPOOL FOOT SPA INSTRUCTIONS & FORMS</div>
+              <button class="nav-link border-0 bg-light mx-3" onClick={()=>{window.open("https://www.tdlr.texas.gov/barbering-and-cosmetology/pdf/Whirlpool-Foot-Spa-Cleaning-Record-BAC-FI-004-E.pdf", "_blank")}}>
               <div class="sb-nav-link-icon">
                 {/* <i class="fas fa-chart-area"></i> */}
                 <i class="fa-solid fa-list-ul"></i>
               </div>
-              TDLR Forms
+              ENGLISH
             </button>
+                <li>
+                  <Link className="dropdown-item" to="/showEmployee">
+                    <div>Show Employee</div>
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/contractorList">
+                    <div>Contractor List</div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="sb-sidenav-footer">

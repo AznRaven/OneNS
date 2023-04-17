@@ -16,7 +16,7 @@ export default function App() {
     <div>
       {/* <HomePage employees={employees} addEmployee={addEmployee} /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<NewChair />} />
         <Route path="/addChairRecord" element={<NewChair />} />
         <Route path="/showChairRecords" element={<ShowChair />} />
         <Route path="/addEmployee" element={<NewEmp />} />

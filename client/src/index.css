@@ -57,6 +57,7 @@ code {
 .techName {
   height: 10vh;
   margin: 5px;
+  /* font-size: 3vh !important; */
 }
 
 .techName:hover {

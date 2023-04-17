@@ -28,7 +28,7 @@ export default function NewChair() {
     setDatetime(e.target.value);
   };
 
-  const datetimeMinus4Hours = subtractHours(new Date(datetime), 4);
+  const datetimeMinus4Hours = subtractHours(new Date(datetime), 5);
 
   const formattedDatetime = datetimeMinus4Hours.toISOString().substr(0, 16);
 
