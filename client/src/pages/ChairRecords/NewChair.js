@@ -73,47 +73,30 @@ export default function NewChair() {
                   <div class="card mb-4 flex-fill shadow">
                     <div class="card-header shadow">
                       <i class="fas fa-chart-area me-1"></i>
-                      Tech Selectiona
+                      Tech Selection
                     </div>
                     <div class="d-flex flex-wrap text-center justify-content-around">
                       
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
-                    <button type="button" class="btn btn-outline-primary techName col-3 col-sm-4 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">John</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Mike</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Test 1</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    <button type="button" class="btn btn-outline-primary techName col-3 col-lg-2">Primary</button>
+                    
                       
                       
                     </div>
                   </div>
                 </div>
                 {/* Chair */}
-                <div class="col-xl-4">
+                <div class="col-xl-4 d-flex flex-column">
                   <div class="card mb-4 shadow">
                     <div class="card-header shadow">
                       <i class="fas fa-chart-bar me-1"></i>
@@ -215,7 +198,7 @@ export default function NewChair() {
                     </div>
                   </div>
                   {/* Detail */}
-                  <div class="card mb-4 shadow">
+                  <div class="card mb-4 shadow flex-fill">
                     <div class="card-header shadow">
                       <i class="fas fa-table me-1"></i>
                       Cleaned & Disinfected
